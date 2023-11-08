@@ -23,7 +23,7 @@ const Work = () => {
 
     useEffect(()=>{
 
-        work_data.map((data)=>{
+        work_data.forEach((data)=>{
             if (data.id === currentComp){
                 setWorkData(data);
                 setAmount(data.amount);
@@ -34,24 +34,26 @@ const Work = () => {
             }
         });
 
-        if(currentComp<=total_work){
-            setTimeout(()=>{
-                setCurrenComp(currentComp+1);
-            },amount*3000);
-        }
-        if(currentComp > total_work){
-            setCurrenComp(1);
-        }
+        // if(currentComp<=total_work){
+        //     setTimeout(()=>{
+        //         setCurrenComp(currentComp+1);
+        //     },amount*3000);
+        // }
+        // if(currentComp > total_work){
+        //     setCurrenComp(1);
+        // }
     },[currentComp])
 
-    console.log(work_data[0].workImage);
+    // console.log("current")
+    // console.log(workNames);
 
 
 
   return (
     <div className='Work'>
+        <div className='work-container-title'>OUR WORK</div>
         <div className='inside-work-container'>
-            <Work_Carousel workIn={workData} workImage={workImages? workImages : work_data[0].workImage} workNames={workNames?workNames :work_data[0].workName} currentComp={currentComp}/>
+            <Work_Carousel workIn={workData} workImage={workImages? workImages : work_data[0].workImage} workNames={workNames?workNames :work_data[0].workName} amount={amount} currentComp={currentComp}/>
             <Company_Carousel workIn={workData} logoImage={logoImage} logoName={logoName} currentComp={currentComp}/>
         </div>
     </div>

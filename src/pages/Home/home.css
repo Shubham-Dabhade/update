@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
 .Home{
     width: 100%;
     display: flex;
@@ -5,6 +11,8 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    scroll-behavior: smooth;
+
     /* overflow: hidden; */
     /* user-select: none; */
 }

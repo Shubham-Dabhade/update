@@ -44,6 +44,8 @@ const Nav = ({increase}) => {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
+    <>
+
     <motion.div
       variants={menuSlide}
       initial="initial"
@@ -77,6 +79,41 @@ const Nav = ({increase}) => {
       </div>
       <Curve />
     </motion.div>
+    {/* changeable nav */}
+    <motion.div
+      variants={menuSlide}
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      className="menu-nav-changed"
+      // ref={menuNavRef}
+    >
+      <div className="menu-body">
+        <div
+          onMouseLeave={() => {
+            setSelectedIndicator(pathname);
+          }}
+          className="nav"
+        >
+          <div className="header">
+            <p>Navigation</p>
+          </div>
+          {navItems.map((data, index) => {
+            return (
+              <Link
+                key={index}
+                data={{ ...data, index }}
+                isActive={selectedIndicator === data.href}
+                setSelectedIndicator={setSelectedIndicator}
+              ></Link>
+            );
+          })}
+        </div>
+        <Footer />
+      </div>
+      <Curve />
+    </motion.div>
+    </>
   );
 };
 
