@@ -123,6 +123,7 @@ const SolutionTrack = () => {
 
   return (
     <>
+    <div id="solutiontrackContainer" style={{width:'100%',height:'100%'}}>
       <div className="SolutionTrack">
         <motion.div
           className="inside-solution-track-container"
@@ -1040,6 +1041,7 @@ const SolutionTrack = () => {
           </motion.div>
         </motion.div>
       </div>
+    </div>
     </>
   );
 };

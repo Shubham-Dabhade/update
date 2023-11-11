@@ -103,7 +103,7 @@ const ServiceArea = () => {
   };
 
   return (
-    <div className="ServiceArea">
+    <div id="ServiceArea">
       <motion.div
         className="service-area-container"
         variants={service}

@@ -64,7 +64,7 @@ const AboutUs = () => {
 
 
   return (
-    <div className="AboutUs">
+    <div id="AboutUs">
       <div className="aboutus-inside-container">
         <motion.div className="aboutus-left-component" variants={aboutUsAnimation} initial='hidden' whileInView='show'>
           <motion.div className="aboutus-left-heading" variants={aboutUsAnimation} initial='hidden' whileInView = 'show' >

@@ -3,6 +3,7 @@ import "./team.css";
 import TeamCard from './TeamCard/TeamCard';
 import team_data from '../../team_details';
 import { motion, useInView, useIsPresent } from "framer-motion";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Team = () => {
 
@@ -107,7 +108,7 @@ const Team = () => {
 
   return (
     <>
-        <div className='Team'>
+        <div id='Team'>
             <motion.div className='team-container' variants={team} initial='hidden' whileInView='show'>
                 <motion.div className='team-top-container' variants={teamAnimationSlideRight}>OUR CORE TEAM</motion.div>
                 <motion.div className='team-bottom-container' variants={teamCard} initial='hidden' whileInView='show'>

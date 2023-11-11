@@ -1,4 +1,4 @@
-.ServiceArea{
+#ServiceArea{
     height: 100vh;
     width: 100%;
     margin: 0px 0px;
@@ -117,7 +117,7 @@
 
 
 @media screen and (min-width:1400px)  {
-    .ServiceArea {
+    #ServiceArea {
         /* height: 80vh; */
         width: 100%;
         margin: 0px 0px;
@@ -126,7 +126,7 @@
 }
 
 @media screen and (min-height: 790px) {
-    .ServiceArea {
+    #ServiceArea {
         height: 80vh;
         width: 100%;
         margin: 0px 0px;
@@ -137,7 +137,7 @@
     .service-left-container-heading{
         font-size: 2.8vw;
     }
-    .ServiceArea{
+    #ServiceArea{
         height: 75vh;
         margin: 8vh 0px;
     }
@@ -203,6 +203,19 @@
     }
 }
 
+@media screen and (max-width:1400px) {
+    .card-container{
+        height: 17vw;
+        width: 16vw;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .card-container{
+        height: 18vw;
+        width: 16vw;
+    }
+}
 
 @media screen and (max-width:1150px) {
     .service-card-heading {
@@ -259,7 +272,7 @@
     .service-left-container-heading{
         margin-bottom: 30px;
     }
-    .ServiceArea{
+    #ServiceArea{
         height: 100%;
     }
 }
@@ -307,3 +320,4 @@
         display: flex;
     }
 }
+

@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.div className="Navbar-outside-component">
+      {/* <motion.div className="Navbar-outside-component"> */}
         <motion.div
           className="Navbar"
           variants={{
@@ -67,7 +67,7 @@ const Navbar = () => {
             {isActive && !navHidden && <Nav increase={navHidden} />}
           </AnimatePresence>
         </motion.div>
-      </motion.div>
+      {/* </motion.div> */}
       {/* // adding overdisplayed navbar */}
       <motion.div
         className="Navbar-changeable"

@@ -161,11 +161,30 @@ svg#curve {
   background-image: url("https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png");
 }
 
+@media screen and (min-width: 1500px) {
+
+  .card:hover .connection {
+    transform: translateY(-120px);
+  }
+  .card:hover .info {
+    transform: translateY(-20%);
+  }
+}
+
 @media screen and (min-width: 2000px) {
   .card {
     width: 25vw;
     height: 25vw;
   }
+  .card:hover .connection {
+    transform: translateY(-120px);
+  }
+  .card:hover .info {
+    transform: translateY(0%);
+  }
+  .info {
+    transform: translateY(300px);
+}
 }
 
 @media screen and (min-width: 2180px) {
@@ -173,33 +192,61 @@ svg#curve {
     width: 20vw;
     height: 20vw;
   }
+  .card:hover .connection {
+    transform: translateY(-120px);
+  }
+  .card:hover .info {
+    transform: translateY(20%);
+  }
 }
+
+
 
 @media screen and (max-width: 1500px) {
   .card {
     width: 25vw;
     height: 25vw;
   }
-}
-
-@media screen and (max-width: 1500px) {
-  .card {
-    width: 25vw;
-    height: 25vw;
+  .card:hover .connection {
+    transform: translateY(-120px);
+  }
+  .card:hover .info {
+    transform: translateY(-20%);
   }
 }
 
 @media screen and (max-width: 1400px) {
+  .card {
+    width: 30vw;
+    height: 30vw;
+  }
   .card:hover .connection {
-    transform: translateY(-100px);
+    transform: translateY(-100px) !important; 
   }
   .card:hover .info {
-    transform: translateY(-140px);
+    transform: translateY(-40px) !important ;
   }
   .team-background {
     padding: 10px 15px;
   }
 }
+
+
+@media screen and (max-width: 1380px) {
+  .card {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .card {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
   .card {
@@ -207,79 +254,192 @@ svg#curve {
     height: 30vw;
   }
   .card:hover .connection {
-    transform: translateY(-115px);
+    transform: translateY(-115px) !important;
   }
   .card:hover .info {
-    transform: translateY(-160px);
+    transform: translateY(-19%) !important;
   }
 }
 
-@media screen and (max-width:1020px) {
-    .card {
-        width: 40vw;
-        height: 40vw;
-      }
-      .team-background{
-        font-size: 15px;
-      }
+@media screen and (max-width: 1030px) {
+  .card {
+    height: 100%;
+    width: 100%;
+    margin: 0px 10px;
+  }
+  .team-background {
+    font-size: 15px;
+  }
+  .info {
+    height: 40vh;
+  }
+  .card:hover .connection {
+    transform: translateY(-175px) !important;
+  }
+  .card:hover .info {
+    transform: translateY(-25%) !important;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .card {
+    height: 40vw;
+    width: 40vw;
+    margin: 0px 10px;
+  }
+  .team-background {
+    font-size: 15px;
+  }
+  .info {
+    height: 40vh;
+  }
+  .card:hover .connection {
+    transform: translateY(-105px) !important;
+  }
+  .card:hover .info {
+    transform: translateY(0%) !important;
+  }
 }
 
-@media screen and (max-width:850px) {
-    .team-top-container{
-        font-size: 1.8rem;
-    }
-    .team-background{
-        font-size: 15px;
-      }
-      .team-member-name {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width:790px) {
-    .card {
-        width: 40vh;
-        height: 40vh;
-      }
+@media screen and (max-width: 850px) {
+  .team-top-container {
+    font-size: 1.8rem;
+  }
+  .team-background {
+    font-size: 15px;
+  }
+  .team-member-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 }
 
 
-@media screen and (max-width:400px) {
-    .card {
-        width: 35vh;
-        height: 35vh;
-      }
-      .team-member-name {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-    }
-    .team-member-designation{
-        font-size: 0.7rem;
-    }
-    .team-background {
-        font-size: 0.8rem;
-    }
-    .card:hover .connection {
-        transform: translateY(-85px);
-      }
-      .card:hover .info {
-        transform: translateY(-140px);
-      }
+
+@media screen and (max-height: 800px) {
+  .card {
+    width: 50vh;
+    height: 50vh;
+  }
+
+  .card:hover .connection {
+    transform: translateY(-70px);
+  }
+  .info {
+    height: 35vh;
+  }
+  .card:hover .info {
+    transform: translateY(-105px);
+  }
 }
 
-@media screen and (max-height:800px) {
-    .card {
-        width: 40vh;
-        height: 40vh;
-      }
+@media screen and (max-width: 790px) {
+  .card {
+    width: 40vh;
+    height: 40vh;
+  }
 }
 
-@media screen and (max-height:700px) {
-    .card:hover .connection {
-        transform: translateY(-65px);
-      }
-      .card:hover .info {
-        transform: translateY(-120px);
-      }
+@media screen and (max-height: 700px) {
+  .card:hover .connection {
+    transform: translateY(-75px);
+  }
+  .info {
+    height: 40vh;
+  }
+  .team-background {
+    font-size: 13px;
+  }
+  .card:hover .info {
+    transform: translateY(-125px);
+  }
 }
+
+
+
+
+@media screen and (max-width: 470px) {
+  .card {
+    width: 40vh;
+    height: 40vh;
+  }
+  .team-member-name {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .team-member-designation {
+    font-size: 0.7rem;
+  }
+  .team-background {
+    font-size: 0.8rem;
+  }
+  .card:hover .connection {
+    transform: translateY(-65px);
+  }
+  .card:hover .info {
+    transform: translateY(10%);
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  .card:hover .connection {
+    transform: translateY(-65px);
+  }
+  .card:hover .info {
+    transform: translateY(10%);
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 420px) {
+
+  .card:hover .connection {
+    transform: translateY(-65px);
+  }
+  .card:hover .info {
+    transform: translateY(10%);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    width: 40vh;
+    height: 40vh;
+  }
+  .card:hover .connection {
+    transform: translateY(-75px) !important;
+  }
+  .card:hover .info {
+    transform: translateY(-15%) !important ;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .card {
+    width: 30vh;
+    height: 30vh;
+  }
+  .card:hover .connection {
+    transform: translateY(-80px) !important;
+  }
+  .card:hover .info {
+    transform: translateY(-1%) !important;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .card {
+    width: 30vh;
+    height: 30vh;
+  }
+  .card:hover .connection {
+    transform: translateY(-80px);
+  }
+  .card:hover .info {
+    transform: translateY(-45%);
+  }
+}
+

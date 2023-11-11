@@ -187,22 +187,27 @@
 
 @media screen and (min-width: 1400px) {
   .SolutionTrack {
-    height: 193vh;
+    height: 173vh;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .SolutionTrack {
-    height: 200vh;
+    height: 220vh;
     overflow: hidden;
   }
+  .solution-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   .solution-card {
-    height: 14vw;
-    width: 14vw;
+    height: 300px;
+    max-width: 300px;
   }
   .solution-card-9 {
-    height: 14vw;
-    width: 17vw;
+    height: 300px;
+    max-width: 300px;
   }
   .solution-card:hover .solution-card-mask {
     transform: scale(4);
@@ -235,9 +240,11 @@
   }
   .solution-card {
     height: 330px;
+    max-width: 14vw;
   }
   .solution-card-9 {
     height: 330px;
+    max-width: 14vw;
   }
   .solution-card:hover .solution-card-mask {
     transform: scale(3);
@@ -270,7 +277,37 @@
 
 @media screen and (min-width: 2300px) {
   .SolutionTrack {
-    height: 140vh;
+    height: 160vh;
+    overflow: hidden;
+  }
+}
+
+/* @media screen and (max-width:1450px) {
+  .SolutionTrack {
+    height: 225vh;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 20px 0px;
+    overflow: hidden;
+  }
+} */
+@media screen and (max-width:1400px) {
+  .SolutionTrack {
+    height: 250vh;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 20px 0px;
+    overflow: hidden;
+  }
+}
+
+
+@media screen and (max-width:1350px) {
+  .SolutionTrack {
+    height: 225vh;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 20px 0px;
     overflow: hidden;
   }
 }
@@ -324,7 +361,7 @@
     padding: 45px 0px;
     overflow: hidden;
     display: block;
-    height: 216vh;
+    /* height: 216vh; */
   }
   .inside-solution-track-container {
     flex-direction: column-reverse;
@@ -437,6 +474,17 @@
     height: 100%;
   }
 }
+@media screen and (max-width:360px) {
+  .solution-card{
+    height: 100%;
+    width: 100%;
+  }
+  .solution-card-9{
+    height: 100%;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .solution-track-right-container {
     text-align: left;

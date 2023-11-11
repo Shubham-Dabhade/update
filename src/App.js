@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import Lenis from "@studio-freight/lenis";
+// import Lenis from "@studio-freight/lenis";
 
 import {
   BrowserRouter as Router,

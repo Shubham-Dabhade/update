@@ -1,4 +1,4 @@
-.Work {
+#Work{
   width: 100%;
   height: 80vh;
   margin: 50px 0px;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .Work {
+  #Work{
     width: 100%;
     height: 100vh;
     margin: 50px 0px;
@@ -33,7 +33,7 @@
   }
 }
 @media screen and (min-width: 1400px) {
-  .Work {
+  #Work{
     width: 100%;
     height: 90vh;
     margin: 50px 0px;
@@ -47,9 +47,9 @@
   }
 }
 @media screen and (min-width: 1500px) {
-  .Work {
+  #Work{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     margin: 50px 0px;
     padding: 0px 80px;
   }
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .Work {
+  #Work{
     width: 100%;
     height: 70vh;
     margin: 50px 0px;
@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .Work {
+  #Work{
     padding: 0px 50px;
     height: 75vh;
   }
@@ -87,7 +87,7 @@
   }
 }
 @media screen and (max-width: 470px) {
-  .Work {
+  #Work{
     padding: 0px 20px;
   }
   .work-container-title{

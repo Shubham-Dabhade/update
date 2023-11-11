@@ -1,15 +1,37 @@
-.Work_Carousel{
-    flex:3;
+#workCarousel{
+    flex:5 !important;
     height: 100%;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden !important;
+    background: rgb(186, 186, 186);
+    border-radius: 30px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.gradient-card{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+
+}
+.make_cover{
+    object-fit: fill !important;
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 50px !important;
+    font-weight: 600;
+    background: -webkit-linear-gradient(27deg, rgba(34,86,195,1) 0%, rgba(251,0,20,1) 20%, rgba(253,187,45,1) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin-bottom: 30px; */
+    text-align: left;
 }
 
 .inner-work-carosuel{
     height: 100%;
     width: 100%;
     /* background: rgba(219, 219, 219, 0.435); */
-    overflow-y: scroll;
     user-select: none;
     /* display: flex;
     flex-direction: column; */
